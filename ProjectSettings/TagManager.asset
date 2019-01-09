@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Stair
+  - Axes
+  - Mario
+  - Fire
+  - DonkeyKong
+  - Pauline
   layers:
   - Default
   - TransparentFX
@@ -15,11 +21,11 @@ TagManager:
   - 
   - 
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Axes
+  - Mario
+  - Fire
+  - DonkeyKong
+  - Pauline
   - 
   - 
   - 
@@ -44,4 +50,19 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2677278331
+    locked: 0
+  - name: Axes
+    uniqueID: 1355319641
+    locked: 0
+  - name: Mario
+    uniqueID: 393500721
+    locked: 0
+  - name: Fire
+    uniqueID: 1067859797
+    locked: 0
+  - name: DonkeyKong
+    uniqueID: 490631477
+    locked: 0
+  - name: Pauline
+    uniqueID: 3023367651
     locked: 0
