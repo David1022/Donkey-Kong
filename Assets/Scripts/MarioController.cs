@@ -11,7 +11,7 @@ public enum MovementDirection
 public class MarioController : MonoBehaviour {
 
     private const float LINEAL_SPEED = 2f;
-    private const float JUMP_FORCE = 40000;
+    private const float JUMP_FORCE = 1000;
     private const float DISTANCE_TO_GROUND = 10f;
 
     public float linealSpeed;
@@ -47,7 +47,7 @@ public class MarioController : MonoBehaviour {
         else
         {
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }

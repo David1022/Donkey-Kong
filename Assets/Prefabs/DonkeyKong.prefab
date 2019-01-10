@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4852039075783410}
   - component: {fileID: 212230781085706748}
   - component: {fileID: 95513438300494290}
+  - component: {fileID: 114618299998635398}
   - component: {fileID: 61700848996554426}
   m_Layer: 0
   m_Name: DonkeyKong
@@ -85,6 +86,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114618299998635398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066701995225082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351cde186caff49b8a977ccffe227724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212230781085706748
 SpriteRenderer:
   m_ObjectHideFlags: 1

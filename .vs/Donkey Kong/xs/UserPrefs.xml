@@ -1,9 +1,17 @@
 ﻿<Properties StartupConfiguration="{71BFB184-90F1-6C8A-D697-5A871A30E75C}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayGame.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManager.cs" Line="4" Column="21" />
+      <File FileName="Assets/Scripts/GoToMenu.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/PlayGame.cs" Line="14" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/davidmendano/Unity/Donkey Kong/Assets/Scripts/MarioController.cs" relfile="Assets/Scripts/MarioController.cs" line="86" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
