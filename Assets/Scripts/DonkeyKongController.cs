@@ -19,8 +19,8 @@ public class DonkeyKongController : MonoBehaviour {
         anim = GetComponent<Animator>();
         isFirstBarrel = true;
         moving = false;
-        Invoke("StartAnimLaunchBarel", 0.5f);
-        InvokeRepeating("toggleAnim", 2.0f, 3.0f);
+        Invoke("StartAnimLaunchBarel", 3f);
+        InvokeRepeating("toggleAnim", 3f, 3f);
     }
 
     // Update is called once per frame

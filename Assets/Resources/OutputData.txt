@@ -1,1 +1,1 @@
-{"time":"18","score":"0","win":false}
+{"time":"4","score":"0","win":true}

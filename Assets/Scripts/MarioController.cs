@@ -12,7 +12,7 @@ public enum MovementDirection
 public class MarioController : MonoBehaviour {
 
     private const float LINEAL_SPEED = 2f;
-    private const float JUMP_FORCE = 10000;
+    private const float JUMP_FORCE = 1000;
     private const float DISTANCE_TO_GROUND = 10f;
     private const float GOING_UP_VELOCITY = 0.5f;
 
@@ -24,9 +24,12 @@ public class MarioController : MonoBehaviour {
 
     private Animator anim;
     private Rigidbody2D rgbodyMario;
+    public Rigidbody2D heart;
+    private Rigidbody2D heartInstance;
     private AudioSource audio;
     public AudioClip jumpAudio;
     public AudioClip deadAudio;
+    public AudioClip winAudio;
 
     public LayerMask groundLayer;
 
@@ -134,6 +137,10 @@ public class MarioController : MonoBehaviour {
         if (collision.collider.tag == "Fire") {
             Dead();
         }
+        if (collision.collider.tag == "WinArea")
+        {
+            Win();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -150,8 +157,18 @@ public class MarioController : MonoBehaviour {
         {
             isInStairs = true;
         }
-        if (collision.tag == "DeadZone" || collision.tag == "Barrel" || collision.tag == "DonkeyKong") {
+        if (collision.tag == "DeadZone" || collision.tag == "DonkeyKong")
+        {
             Dead();
+        }
+        if (collision.tag == "Barrel" && anim.GetBool("isSmashing"))
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.tag == "Axes")
+        {
+            Destroy(collision.gameObject);
+            anim.SetBool("isSmashing", true);
         }
     }
 
@@ -202,5 +219,25 @@ public class MarioController : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         SaveLoad.Save(GameManager.instance.time.ToString(), GameManager.instance.score.ToString(), false);
         SceneManager.LoadScene("EndScreen");
+    }
+
+    private void Win() {
+        canPlay = false;
+        CreateHeart();
+        GameManager.StopAudio();
+        audio.PlayOneShot(winAudio);
+        StartCoroutine("ChangeToWinScreen");
+    }
+
+    IEnumerator ChangeToWinScreen()
+    {
+        yield return new WaitForSeconds(3f);
+        SaveLoad.Save(GameManager.instance.time.ToString(), GameManager.instance.score.ToString(), true);
+        SceneManager.LoadScene("EndScreen");
+    }
+
+    private void CreateHeart() {
+        Vector3 initialPosition = new Vector3(transform.position.x - 0.4f, transform.position.y + 0.4f, transform.position.z);
+        heartInstance = Instantiate(heart, initialPosition, transform.rotation) as Rigidbody2D;
     }
 }
