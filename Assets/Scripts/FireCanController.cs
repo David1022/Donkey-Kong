@@ -29,7 +29,7 @@ public class FireCanController : MonoBehaviour {
     }
 
     private void CreateNewFire() {
-        Vector3 initialPosition = new Vector3(transform.position.x + 0.2f, transform.position.y + 0.3f, transform.position.z);
+        Vector3 initialPosition = new Vector3(transform.position.x + 0.5f, transform.position.y + 0.3f, transform.position.z);
         fireInstance = Instantiate(fire, initialPosition, transform.rotation) as Rigidbody2D;
     }
 }

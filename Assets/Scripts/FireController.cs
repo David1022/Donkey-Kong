@@ -13,6 +13,7 @@ public class FireController : MonoBehaviour {
     void Start () {
         rgbody = GetComponent<Rigidbody2D>();
         linealSpeed = LINEAL_SPEED;
+        GetComponent<SpriteRenderer>().flipX = false;
     }
 
     // Update is called once per frame
@@ -25,4 +26,24 @@ public class FireController : MonoBehaviour {
         rgbody.velocity = new Vector2(linealSpeed, 0);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("FireLimit"))
+        {
+            ChangeDirection();
+        }
+    }
+
+    private void ChangeDirection()
+    {
+        if (linealSpeed > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        linealSpeed = (-1) * linealSpeed;
+    }
 }

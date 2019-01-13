@@ -31,7 +31,6 @@ public class PathFollower : MonoBehaviour {
     void Update () {
         Timer += Time.deltaTime * speed;
         if(barrel.transform.position != currentPosition) {
-            //barrel.transform.position = Vector3.Lerp(barrel.transform.position, currentPosition, Timer);
             barrel.transform.position = Vector3.MoveTowards(barrel.transform.position, currentPosition, 0.025f);
         }
         else {

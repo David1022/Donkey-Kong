@@ -14,6 +14,7 @@ TagManager:
   - Barrel
   - DeadZone
   - Node
+  - FireLimit
   layers:
   - Default
   - TransparentFX
