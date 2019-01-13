@@ -75,7 +75,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: 0.75
+  - time: 0.5
     functionName: LaunchBarrel
     data: 
     objectReferenceParameter: {fileID: 1066701995225082, guid: 1790d2549530f40dbbafaf3e9cd3f341,
