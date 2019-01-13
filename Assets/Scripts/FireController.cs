@@ -26,6 +26,13 @@ public class FireController : MonoBehaviour {
         rgbody.velocity = new Vector2(linealSpeed, 0);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Fire") {
+            ChangeDirection();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("FireLimit"))

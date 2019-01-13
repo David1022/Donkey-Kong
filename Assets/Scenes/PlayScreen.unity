@@ -5404,7 +5404,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1754689902}
+    m_TransformParent: {fileID: 1486382828}
     m_Modifications:
     - target: {fileID: 4005052268758198, guid: 5c93bd16ee0b94564944d2d1095edf8d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -5412,7 +5412,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4005052268758198, guid: 5c93bd16ee0b94564944d2d1095edf8d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.69
+      value: 1.6900003
       objectReference: {fileID: 0}
     - target: {fileID: 4005052268758198, guid: 5c93bd16ee0b94564944d2d1095edf8d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5436,7 +5436,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4005052268758198, guid: 5c93bd16ee0b94564944d2d1095edf8d, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1539040358532444, guid: 5c93bd16ee0b94564944d2d1095edf8d, type: 2}
       propertyPath: m_Name
@@ -5765,6 +5765,35 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 532227130}
+  m_Father: {fileID: 1754689902}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1486382827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486382828}
+  m_Layer: 0
+  m_Name: Barrels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1486382828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486382827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 987317197}
   m_Father: {fileID: 1754689902}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6402,8 +6431,8 @@ Transform:
   - {fileID: 1007945846}
   - {fileID: 2116747919}
   - {fileID: 311837824}
+  - {fileID: 1486382828}
   - {fileID: 1481365840}
-  - {fileID: 987317197}
   - {fileID: 319601930}
   - {fileID: 295379770}
   m_Father: {fileID: 1875574010}
@@ -6615,8 +6644,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06, y: 0.08}
-  m_Size: {x: 0.12, y: 0.16}
+  m_Offset: {x: 0.054105237, y: 0.035578758}
+  m_Size: {x: 0.057683796, y: 0.071157515}
   m_Direction: 0
 --- !u!114 &1802433228
 MonoBehaviour:

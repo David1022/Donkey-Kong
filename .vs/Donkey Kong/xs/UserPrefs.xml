@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{71BFB184-90F1-6C8A-D697-5A871A30E75C}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FirstBarrelController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MarioController.cs">
     <Files>
-      <File FileName="Assets/Scripts/DonkeyKongController.cs" Line="27" Column="18" />
-      <File FileName="Assets/Scripts/PathFollower.cs" Line="32" Column="41" />
-      <File FileName="Assets/Scripts/FireController.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/FireCanController.cs" Line="32" Column="71" />
-      <File FileName="Assets/Scripts/FirstBarrelController.cs" Line="7" Column="42" />
+      <File FileName="Assets/Scripts/MarioController.cs" Line="22" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
