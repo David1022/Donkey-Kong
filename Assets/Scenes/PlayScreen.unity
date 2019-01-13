@@ -4435,11 +4435,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4342042561198382, guid: 829f0702aefd346e7b2968407204ea0f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.287
+      value: -2.414
       objectReference: {fileID: 0}
     - target: {fileID: 4342042561198382, guid: 829f0702aefd346e7b2968407204ea0f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.192
+      value: -0.884
       objectReference: {fileID: 0}
     - target: {fileID: 4342042561198382, guid: 829f0702aefd346e7b2968407204ea0f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5291,11 +5291,6 @@ Prefab:
     - target: {fileID: 1058842495178974, guid: b48bd62b923c34cd08675193c4733b0a, type: 2}
       propertyPath: m_Name
       value: Axes (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 70369274740922470, guid: b48bd62b923c34cd08675193c4733b0a,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b48bd62b923c34cd08675193c4733b0a, type: 2}
@@ -6752,6 +6747,7 @@ MonoBehaviour:
   jumpAudio: {fileID: 8300000, guid: 79da0834c084a4d38866071974f36193, type: 3}
   deadAudio: {fileID: 8300000, guid: 88a445fff5b6a4149a2a27fed7496892, type: 3}
   winAudio: {fileID: 8300000, guid: 1cb6dbe728f4e4954923bd02a5a9c38b, type: 3}
+  scoreAudio: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256

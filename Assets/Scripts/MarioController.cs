@@ -30,6 +30,7 @@ public class MarioController : MonoBehaviour {
     public AudioClip jumpAudio;
     public AudioClip deadAudio;
     public AudioClip winAudio;
+    public AudioClip scoreAudio;
 
     public LayerMask groundLayer;
 
@@ -163,13 +164,20 @@ public class MarioController : MonoBehaviour {
         }
         if (collision.tag == "Barrel" && anim.GetBool("isSmashing"))
         {
-            Destroy(collision.gameObject);
+            DestroyBarrel(collision);
         }
         if (collision.tag == "Axes")
         {
             Destroy(collision.gameObject);
             anim.SetBool("isSmashing", true);
         }
+    }
+
+    private void DestroyBarrel(Collider2D collision) {
+        audio.PlayOneShot(scoreAudio);
+        Destroy(collision.gameObject);
+        anim.SetBool("isSmashing", false);
+        GameManager.instance.score += 100;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
