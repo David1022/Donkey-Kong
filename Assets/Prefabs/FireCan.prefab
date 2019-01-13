@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4680323839704406}
   - component: {fileID: 212739094531277452}
   - component: {fileID: 95338000044135766}
-  m_Layer: 0
+  - component: {fileID: 61303869711274654}
+  - component: {fileID: 114233825083749300}
+  m_Layer: 11
   m_Name: FireCan
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,12 +37,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024302209204352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9384732, y: -2.35, z: 10}
+  m_LocalPosition: {x: -2.9384732, y: -2.334, z: 10}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61303869711274654
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1024302209204352}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08, y: 0.120615534}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0.16, y: 0.24}
+    newSize: {x: 0.16, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.23876892}
+  m_EdgeRadius: 0
 --- !u!95 &95338000044135766
 Animator:
   serializedVersion: 3
@@ -59,6 +86,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114233825083749300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1024302209204352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c9ce477020e48e798cafea69edbef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: {fileID: 50223658269855638, guid: c55365af1f3a342e489f34121ececb32, type: 2}
 --- !u!212 &212739094531277452
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,8 +130,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1067859797
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300138, guid: d1eabad4978384fedb6d16ab9ef16790, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

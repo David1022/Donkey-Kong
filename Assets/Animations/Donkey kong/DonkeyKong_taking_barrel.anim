@@ -74,4 +74,12 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.75
+    functionName: LaunchBarrel
+    data: 
+    objectReferenceParameter: {fileID: 1066701995225082, guid: 1790d2549530f40dbbafaf3e9cd3f341,
+      type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

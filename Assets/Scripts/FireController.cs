@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireController : MonoBehaviour {
 
-    private const float LINEAL_SPEED = 0.1f;
+    private const float LINEAL_SPEED = 1f;
 
     public float linealSpeed;
     private Rigidbody2D rgbody;

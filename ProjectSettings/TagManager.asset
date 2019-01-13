@@ -11,6 +11,9 @@ TagManager:
   - Fire
   - DonkeyKong
   - Pauline
+  - Barrel
+  - DeadZone
+  - Node
   layers:
   - Default
   - TransparentFX
@@ -26,9 +29,9 @@ TagManager:
   - Fire
   - DonkeyKong
   - Pauline
-  - 
-  - 
-  - 
+  - Barrel
+  - DeadZone
+  - Node
   - 
   - 
   - 
@@ -65,4 +68,13 @@ TagManager:
     locked: 0
   - name: Pauline
     uniqueID: 3023367651
+    locked: 0
+  - name: Barrel
+    uniqueID: 2548698935
+    locked: 0
+  - name: DeadZone
+    uniqueID: 1192786317
+    locked: 0
+  - name: Node
+    uniqueID: 1807637101
     locked: 0

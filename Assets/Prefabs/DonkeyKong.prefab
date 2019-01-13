@@ -97,6 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351cde186caff49b8a977ccffe227724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barrel: {fileID: 50934401083895688, guid: 5c93bd16ee0b94564944d2d1095edf8d, type: 2}
+  firstBarrel: {fileID: 50748614352213758, guid: b966b9684e63a44ef8d7f782a1571466,
+    type: 2}
 --- !u!212 &212230781085706748
 SpriteRenderer:
   m_ObjectHideFlags: 1

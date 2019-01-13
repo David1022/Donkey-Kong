@@ -64,12 +64,20 @@
     <Compile Include="Assets\Scripts\BarrelController.cs" />
     <Compile Include="Assets\Scripts\DonkeyKongController.cs" />
     <Compile Include="Assets\Scripts\ExitGame.cs" />
+    <Compile Include="Assets\Scripts\FinalManager.cs" />
+    <Compile Include="Assets\Scripts\FireCanController.cs" />
     <Compile Include="Assets\Scripts\FireController.cs" />
+    <Compile Include="Assets\Scripts\FirstBarrelController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GoToMenu.cs" />
     <Compile Include="Assets\Scripts\MarioController.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\OutputData.cs" />
+    <Compile Include="Assets\Scripts\PathFollower.cs" />
     <Compile Include="Assets\Scripts\PaulineController.cs" />
     <Compile Include="Assets\Scripts\PlayGame.cs" />
+    <Compile Include="Assets\Scripts\SaveLoad.cs" />
+    <None Include="Assets\Resources\OutputData.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/davidmendano/Unity/Donkey Kong/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
